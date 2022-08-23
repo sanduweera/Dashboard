@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale-1.0">
+        <title>Add user Form</title>
+       
+        <link rel="Stylesheet" href="signup.css">
+    </head>
+
+    <body>        
+        <div class="container">            
+            <button type="add" class="btn" onclick="openPopup()" >Add</button>
+        <div class="popup" id="popup">
+            <img src="addicon1.jpg">    
+        <div class="context">        
+            <h2><img src="addicon2.png">Adult</h2>
+            <p>if you are above 18 years add here</p>            
+            <button type="button" onclick=location.href='addadult.html' >Add</button>            
+            <h2><img src="addicon3.webp">Child</h2>
+            <p>if you are below 18 years add here</p>
+            <button type="button" onclick=location.href='addchild.html'>Add</button>
+        </div>
+        </div>
+        </div>
+
+        <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            
+        </script>
+    </body>
+</html>

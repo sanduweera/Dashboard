@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vaccine Wallet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Login.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.frontawesome.com/a81368914c.js"></script>
+</head>
+<body>
+	<div id="preloader"></div>
+	<img class="blue" src="img/blue.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/vac.png">
+		</div>
+		<div class="login-container">
+			<form action="Dashboard.html">
+				<img class="profile" src="img/profile.png">
+				<h2>Vaccine Wallet</h2>
+				<h3>Admin Portal</h3>
+				<div class="input-div one">
+					<div class="i">
+						<i class="fa fa-user"></i>
+					</div>
+					<div>
+						<h5>Username</h5>
+						<input class="input" type="text">
+					</div>
+				</div>
+				<div class="input-div two">
+					<div class="i">
+						<i class="fa fa-lock"></i>
+					</div>
+					<div>
+						<h5>Password</h5>
+						<input class="input" type="password">
+					</div>
+				</div>
+				<a href="#">Forgot Password?</a>
+				<input type="submit" class="btn" value="Login" >
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="Login.js"></script>
+
+	<script>
+		var loader = document.getElementById("preloader");
+
+		window.addEventListener("load", function(){
+			loader.style.display = "none";
+		})
+		
+	</script>
+
+</body>
+</html>
