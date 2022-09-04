@@ -8,20 +8,22 @@
     <body>
         <div class="center">
             <h1> Adult Signup</h1>
-            <form method="post">
+            <form method="post" id="adult_signup">
                 <div class="txt_field">
-                    <input type="text" required>
+                    <input type="text" id="name" required>
                     <label>Username</label>
                 </div>
                 <div>
                     <div class="txt_field">
-                        <input type="text" required>
-                        <label>User Id</label>
+                        <input type="text" id="id" required>
+                        <label>User Id </label>
                 </div>
                 <input type="submit" value="Add">                
                 
             </form>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="./firebase.js"></script>
     </body>
 
 </html>
