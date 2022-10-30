@@ -10,20 +10,63 @@
             <h1> Adult Signup</h1>
             <form method="post" id="adult_signup">
                 <div class="txt_field">
-                    <input type="text" id="name" required>
+                    <input type="text" name="Username" id="name" required>
                     <label>Username</label>
                 </div>
                 <div>
                     <div class="txt_field">
-                        <input type="text" id="id" required>
+                        <input type="text" name="UserId" id="Id" required>
                         <label>User Id </label>
                 </div>
-                <input type="submit" value="Add">                
+
+                <button type="button"  id="submit_data" name="submit_data">Add</button>        
                 
             </form>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-        <script src="./firebase.js"></script>
-    </body>
+        </div> 
+    </body>   
+</html>   
+ 
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+  import { getFirestore, addDoc,collection} from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-</html>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC1dJtNBsEY5oCb6Bm7bW4-OT3Ek4rdeQM",
+    authDomain: "vaccination-fe9eb.firebaseapp.com",
+    projectId: "vaccination-fe9eb",
+    storageBucket: "vaccination-fe9eb.appspot.com",
+    messagingSenderId: "470038900507",
+    appId: "1:470038900507:web:3cbaaf929572e3f5ddadbe"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  // Initialize Cloud Firestore and get a reference to the service
+  const db = getFirestore(app);
+
+  submit_data.addEventListener('click', (e) => {
+     
+      var Id = document.getElementById('Id').value;
+      var name = document.getElementById('name').value;
+      
+
+      addDoc(collection(db, "adults"), {
+      name: name,
+      Id: Id
+     
+     });
+   
+     alert('adult added');
+
+  });
+
+</script>
+   
+    
+
+   
+

@@ -10,22 +10,63 @@
             <h1> Child Signup</h1>
             <form method="post">
                 <div class="txt_field">
-                    <input type="text" required>
+                    <input type="text"  name="parent ID" id="ID" required>
                     <label>Parent ID</label>
                 </div>
                 <div>
                     <div class="txt_field">
-                        <input type="text" required>
+                        <input type="text"  name="Child Name" id="Name" required>
                         <label>Child Name</label>
                 </div>
                 <div class="txt_field">
-                    <input type="text" required>
+                    <input type="text"  name="Birth Certificate No" id="Certificate_no" required>
                     <label>Birth Certificate No.</label>
             </div>
-                <input type="submit" value="Add">                
+                <button type="button"  id="submit_data" name="submit_data">Add</button>                
                 
             </form>
         </div>
     </body>
 
 </html>
+
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+    import { getFirestore, addDoc,collection} from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyC1dJtNBsEY5oCb6Bm7bW4-OT3Ek4rdeQM",
+      authDomain: "vaccination-fe9eb.firebaseapp.com",
+      projectId: "vaccination-fe9eb",
+      storageBucket: "vaccination-fe9eb.appspot.com",
+      messagingSenderId: "470038900507",
+      appId: "1:470038900507:web:3cbaaf929572e3f5ddadbe"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    // Initialize Cloud Firestore and get a reference to the service
+    const db = getFirestore(app);
+
+    submit_data.addEventListener('click', (e) => {
+       
+        var ID = document.getElementById('ID').value;
+        var Name = document.getElementById('Name').value;
+        var Certificate_no = document.getElementById('Certificate_no').value;
+
+        addDoc(collection(db, "children"), {
+        Name: Name,
+        Id: ID,
+        Certificate_no: Certificate_no
+       });
+     
+       alert('child added');
+
+    });
+
+  </script>
