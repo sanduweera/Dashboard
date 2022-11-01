@@ -19,7 +19,7 @@
                         <label>User Id </label>
                 </div>
 
-                <button type="button"  id="submit_data" name="submit_data">Add</button>        
+                <button type="button"  id="submit_data" class="btn" name="submit_data">Add</button>        
                 
             </form>
         </div> 
@@ -29,7 +29,7 @@
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-  import { getFirestore, addDoc,collection} from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
+  import { getFirestore, setDoc,doc} from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -54,13 +54,13 @@
       var name = document.getElementById('name').value;
       
 
-      addDoc(collection(db, "adults"), {
+      setDoc(doc(db, "adults",Id), {
       name: name,
       Id: Id
      
      });
    
-     alert('adult added');
+     alert('child added');
 
   });
 
