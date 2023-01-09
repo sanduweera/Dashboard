@@ -1,0 +1,107 @@
+body {
+    background-image: url('img/blue.png');
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+p{
+    font-size: 12px;
+}
+
+/* Add padding to containers */
+
+.container {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    backdrop-filter: blur(30px);
+    width: 30%;
+    height: 30%;
+    padding: 16px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 5px 5px 5px rgba(45,55,68,0.1);
+    margin-left: 35%;
+    
+}
+nav{
+    display: flex;
+    padding: 2px 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    border-radius: 5px;
+    font-size: 12px;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 22px 0;
+    display: list-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+
+.registerbtn {
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 150px;
+    opacity: 0.9;
+    color: rgb(11, 11, 11);
+    font-size: 18px;
+    background: #fff;
+    border: 5px;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 63%;
+    font-weight: 700;
+    
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+.details{
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    width: 30%;
+    height: 30%;
+    padding: 16px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 5px 5px 5px rgba(45,55,68,0.1);
+
+}

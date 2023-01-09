@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --main-color: #0494ad;
+    --main-color: #356fb4;
     --color-dark: #1D2231;
     --text-grey : #8398A2;
 }
@@ -202,7 +202,7 @@ main {
     border-radius: 30px;
     margin-left: 10px;
     color: whitesmoke;
-    background-color: #0494ad;
+    background-color: #356fb4;
 }
 
 .search-btns button:hover {
