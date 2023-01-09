@@ -54,13 +54,17 @@
       var name = document.getElementById('name').value;
       
 
-      setDoc(doc(db, "adults",Id), {
+    setDoc(doc(db, "adults",Id), {
       name: name,
       Id: Id
      
-     });
-   
-     alert('child added');
+     })
+   .then (function() {
+    alert('child added');
+   })
+   .catch(function(error){
+    alert.error(error);
+   })
 
   });
 
