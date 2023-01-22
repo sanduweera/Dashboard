@@ -18,7 +18,7 @@
     height: 100%;
     width: 100%;
     color: white;
-    margin-top: 20%;
+    margin-top: 23%;
 }
 .col{
     flex-basis: 50%;
@@ -318,9 +318,7 @@ input[type="submit"]:hover{
     padding-right: 1rem;
   }
   
-  .user-wrapper {
-    display: flex;
-  }
+ 
   
   .user-wrapper img {
     border-radius: 50%;
