@@ -56,7 +56,7 @@ button{
     border-radius: 5px;
     outline: none;
     margin-top: 20px;
-    margin-left: 50%;
+    margin-left: 40%;
     cursor: pointer;
     transition: transform 0.5s;
     border-color: rgb(109, 169, 178);
