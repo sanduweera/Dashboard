@@ -4,7 +4,6 @@
     font-family: 'Roboto', sans-serif;
 }
 .header{
-    background-image: url('Images2/blue.png');
     min-height: 100vh;
     width: 100%;
     background-size: cover;
@@ -29,7 +28,7 @@ nav img{
     display: flex;
     height: 88%;
     color: white;
-    margin-left: 60%;
+    margin-left: 50%;
     margin-top: 5%;
 }
 .col{
@@ -55,7 +54,7 @@ button{
     border-radius: 5px;
     outline: none;
     margin-top: 20px;
-    margin-left: 70%;
+    margin-left: 40%;
     cursor: pointer;
     transition: transform 0.5s;
     border-color: rgb(109, 169, 178);
