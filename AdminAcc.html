@@ -6,28 +6,11 @@
         <link rel="stylesheet" href="AdminAcc.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body>
-        <div class="header">
-            <nav>
-                <a href="Addadmin.html" class="logo"><img src="Images/logo.png"></a>               
-            </nav>           
-        
-
-        <div class="row">
-            <div class="col">
-                <h1>Admin Panel</h1>
-                <p>You have access to Admin and User Details</p>
-                <button  type="button" onclick=location.href='Addadmin.html'>ADD ADMIN</button >
-                <button  type="button" onclick=location.href='change.html' >CHANGE PASSWORD</button>
-            </div>
-            
-        </div>
-       
-</div>
-
-<input type="checkbox" id="nav-toggle">
+    <input type="checkbox" id="nav-toggle">
     <div class="sidebar">
         <div class="sidebar-brand">
             <h2><span class="las la-syringe"></span> <span>Admin Portal</span></h2>
@@ -44,11 +27,11 @@
                     <span>Add Users</span></a>
                 </li>
                 <li>
-                    <a href="AdminAcc.html"><span class="las la-user-circle"></span>
+                    <a href="AdminAcc.html" class="active"><span class="las la-user-circle"></span>
                     <span>Admin Accounts</span></a>
                 </li>
                 <li>
-                    <a href="QR.html" class="active"><span class="las la-hospital"></span>
+                    <a href="QR.html"><span class="las la-hospital"></span>
                     <span>Details</span></a>
                 </li>
                 <li>
@@ -76,6 +59,32 @@
               </div>
           </div>
       </header>
+        <div class="header">
+            <nav>
+                <a href="Addadmin.html" class="logo"><img src="Images/logo.png"></a>               
+            </nav>           
+        
+
+        <div class="row">
+            <div class="col">
+                <h1>Admin Panel</h1>
+                <p>You have access to Admin and User Details</p>
+                <button  type="button" onclick=location.href='Addadmin.html'>ADD ADMIN</button >
+                <button  type="button" onclick=location.href='change.html' >CHANGE PASSWORD</button>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h5>Admins</h5>
+                </div>
+                <div class="card">
+                    <h5>Users</h5>
+                </div>
+            </div>
+        </div>
+       
+</div>
+
+
 
 <!--
 <div class="second">
