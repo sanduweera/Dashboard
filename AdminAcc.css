@@ -33,7 +33,8 @@ button{
     color: rgb(255, 255, 255);
     font-size: 12px;
     padding: 12px 0;
-    background:#52a0ff;
+    color:#52a0ff;
+    background: #fff;
     border: 5px;
     border-radius: 5px;
     outline: none;
