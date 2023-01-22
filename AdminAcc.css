@@ -242,10 +242,10 @@ input[type="submit"]:hover{
 .change2{
     position: absolute;
     top: 30%;
-    left: 60%;
+    left: 40%;
     transform: translate(-50px, -50px);
     width: 400px;
-    background-color: rgb(54, 84, 88);
+    background-color: #356fb4;
     border-radius: 10px;
 
 }
