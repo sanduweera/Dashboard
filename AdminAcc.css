@@ -27,7 +27,7 @@ nav img{
 .row{
     display: flex;
     height: 88%;
-    width: 60%;
+    align-items: center;
     color: white;
     margin-left: 40%;
     margin-top: 5%;
