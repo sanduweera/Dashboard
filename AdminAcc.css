@@ -6,9 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-size:center;
-    position: relative;
-    background-attachment: fixed;
+    background-size:fixed;
     filter: blur(100%);
     filter: brightness(70%);
     filter: drop-shadow(50%);
