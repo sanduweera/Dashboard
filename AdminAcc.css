@@ -25,13 +25,13 @@ h1{
 
 p{
     margin-left: 40%;
-    color: #5272a0;
+    color: #445061;
 }
 
 button{
     width: 180px;
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 15px;
     padding: 12px 0;
     background:#356fb4;
     border: 5px;
@@ -41,7 +41,7 @@ button{
     margin-left: 40%;
     cursor: pointer;
     transition: transform 0.5s;
-    border-color: rgb(109, 169, 178);
+    border-color: #356fb4;
 }
 
 button:hover{
