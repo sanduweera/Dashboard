@@ -18,7 +18,6 @@
     height: 100%;
     width: 100%;
     color: white;
-    
     margin-top: 20%;
 }
 .col{
@@ -321,7 +320,7 @@ input[type="submit"]:hover{
   
   .user-wrapper {
     display: flex;
-    align-items: center;
+    
   }
   
   .user-wrapper img {
