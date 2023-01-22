@@ -30,10 +30,10 @@ p{
 
 button{
     width: 180px;
-    color: rgb(79, 94, 204);
+    color: rgb(11, 11, 11);
     font-size: 12px;
     padding: 12px 0;
-    background: #fff;
+    background: rgb(89, 86, 197);
     border: 5px;
     border-radius: 5px;
     outline: none;
