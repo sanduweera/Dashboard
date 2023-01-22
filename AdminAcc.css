@@ -25,7 +25,6 @@ nav img{
 }
 
 .row{
-    display: flex;
     height: 88%;
     width: 100%;
     align-items: center;
@@ -228,12 +227,12 @@ input[type="submit"]:hover{
     filter: blur(100%);
     filter: brightness(70%);
     filter: drop-shadow(50%);
-    filter: contrast(50%);
+   
 
 }
 
 .change{
-    display: flex;
+    display:flex;
     height: 88%;
     color: rgb(0, 0, 0);
     margin-left: 60%;
