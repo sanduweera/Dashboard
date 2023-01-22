@@ -20,9 +20,7 @@
 h1{
     margin-left: 40%;
     font-size: 50px;
---main-color: #356fb4;
---color-dark: #1D2231;
---text-grey : #8398A2;
+    color: linear-gradient(120deg,#2980b9,#4e4482);;
 }
 
 p{
