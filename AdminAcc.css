@@ -47,29 +47,6 @@ button:hover{
     border-color: #0f0f0f;
 }
 
-.popup{
-  margin-top: 4%;
-  width: 400px;
-  background: #356fb4;
-  border-radius: 8px;
-  position: absolute;
-  top: 0;
-  left: 62%;
-  transform: translate(-50%,-50%) scale(0.1);
-  text-align: center;
-  padding: 0 30px 30px;
-  color: #333;
-  visibility: hidden;
-  transition: transform 0.4s, top 0.4s;
-}
-
-.open-popup{
-  visibility: visible;
-  top: 50%;
-  transform: translate(-50%,-50%) scale(1);
-
-}
-
 
 
 /*-------------------------Side Bar-----------------------*/
