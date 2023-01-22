@@ -4,7 +4,6 @@
     font-family: 'Roboto', sans-serif;
 }
 .header{
-    min-height: 100vh;
     filter: blur(100%);
     filter: brightness(70%);
     filter: drop-shadow(50%);
