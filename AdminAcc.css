@@ -20,11 +20,12 @@
 h1{
     margin-left: 40%;
     font-size: 50px;
-    color: linear-gradient(120deg,#2980b9,#4e4482);;
+    color: #385d8c;
 }
 
 p{
     margin-left: 40%;
+    color: #7f92ac;
 }
 
 button{
