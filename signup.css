@@ -153,6 +153,7 @@
 }
 
 .popup{
+    margin-top: 10%;
     width: 400px;
     background: #356fb4;
     border-radius: 8px;
