@@ -4,17 +4,16 @@
     font-family: 'Roboto', sans-serif;
 }
 .header{
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  left: 345px;
-  width: calc(100% - 345px);
-  top: 0;
-  z-index: 100;
-  transition: left 300ms;
+    background-image: url('Images2/blue.png');
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    filter: blur(100%);
+    filter: brightness(70%);
+    filter: drop-shadow(50%);
+    filter: contrast(50%);
 }
 nav{
     display: flex;
