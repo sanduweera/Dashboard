@@ -318,7 +318,10 @@ input[type="submit"]:hover{
     padding-right: 1rem;
   }
   
- 
+  .user-wrapper {
+    display: flex;
+  margin-left: 10px;
+  }
   
   .user-wrapper img {
     border-radius: 50%;
