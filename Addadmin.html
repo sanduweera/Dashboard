@@ -11,7 +11,7 @@
 
 <form>
     <nav>
-        <a href="AdminAcc.html" class="logo"><img src="img/logo.png"></a>               
+        <a href="Addadmin.html" class="logo"><img src="img/logo.png"></a>               
     </nav>
    
     <div class="container">
@@ -29,7 +29,58 @@
         <button type="button" id="submitData" name="Submit Data" class="registerbtn">Save</button>
     </div>
 
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="las la-syringe"></span> <span>Admin Portal</span></h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="Dashboard.html"><span class="las la-igloo"></span>
+                    <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="signup.html"><span class="las la-users"></span>
+                    <span>Add Users</span></a>
+                </li>
+                <li>
+                    <a href="AdminAcc.html"><span class="las la-user-circle"></span>
+                    <span>Admin Accounts</span></a>
+                </li>
+                <li>
+                    <a href="QR.html" class="active"><span class="las la-hospital"></span>
+                    <span>Details</span></a>
+                </li>
+                <li>
+                    <a href="Login.html"><span class="las la-door-open"></span>
+                    <span>Log Out</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+      <header>
+          <h2>
+              <label for="nav-toggle">
+                  <span class="las la-bars"></span>
+              </label>
+
+              User Details
+          </h2>
+          
+          <div class="user-wrapper">
+              <img src="img/user.jpg" width="40px" height="40px" alt="">
+              <div>
+                  <h4>Kusal Mendes</h4>
+                  <small>PHI Officer</small>
+              </div>
+          </div>
+      </header>
 </form>
+
+
 
 </body>
 </html>
