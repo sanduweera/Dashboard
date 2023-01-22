@@ -46,7 +46,7 @@ button{
 }
 
 button:hover{
-    transform:var(--text-grey);
+    transform:var(--color-dark);
     border-color: #0f0f0f;
 }
 
