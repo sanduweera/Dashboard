@@ -5,8 +5,7 @@
 }
 .header{
     filter: blur(100%);
-    filter: brightness(70%);
-    filter: drop-shadow(50%);
+    
 }
 
 .row{
