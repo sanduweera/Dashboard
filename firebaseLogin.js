@@ -21,23 +21,23 @@ function ErrorMsg(){
         console.log("connecting to firebase...");
         console.log(nic);
         console.log(name);
-      
-        const docRef = db.collection('admins')
-   .where("Name", "==", name)
-   .where("id", "==", nic);
-// ^ separate .where()
+      alert('error');
+//         const docRef = db.collection('admins')
+//    .where("Name", "==", name)
+//    .where("id", "==", nic);
+// // ^ separate .where()
 
-docRef.get().then((snapshot) => {
-  if (snapshot.empty) {
-    // no docs matched
-    console.log("Invalid Credentials")
-  } else {
-    console.log(snapshot.docs[0].data())
-    .then(function() {
-      window.location.href = "/Dashboard.html";
-    });
-  }
-})
+// docRef.get().then((snapshot) => {
+//   if (snapshot.empty) {
+//     // no docs matched
+//     console.log("Invalid Credentials")
+//   } else {
+//     console.log(snapshot.docs[0].data())
+//     .then(function() {
+//       window.location.href = "/Dashboard.html";
+//     });
+//   }
+// })
 }
 
 }
