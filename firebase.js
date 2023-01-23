@@ -10,6 +10,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
 
+
 function ErrorMsg(){
     var nic = document.getElementById("NIC").value;
     var name = document.getElementById("name").value;
