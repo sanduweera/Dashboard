@@ -15,60 +15,44 @@
                 </div>
                 <div>
                     <div class="txt_field">
-                        <input type="text" name="UserId" id="Id" required>
+                        <input type="text" name="UserId" id="NIC" required>
                         <label>User Id </label>
                 </div>
+                <br><input type="radio" id="Mgender" name="gender" value="male"/> Male  
+                <input type="radio" id="Fgender" name="gender" value="female"/> Female <br>
 
-                <button type="button"  id="submit_data" class="btn" name="submit_data">Add</button>        
+                <button type="button" onclick="ErrorMsg()"  id="submit_data" class="btn" name="submit_data">Add</button>        
                 
             </form>
-        </div> 
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyC98k--pr_8NqWy6l9sBRsnDlTH8l2-eR8",
+              authDomain: "gpsd-3b169.firebaseapp.com",
+              databaseURL: "https://gpsd-3b169-default-rtdb.firebaseio.com",
+              projectId: "gpsd-3b169",
+              storageBucket: "gpsd-3b169.appspot.com",
+              messagingSenderId: "690462553077",
+              appId: "1:690462553077:web:f7e0e007f9fc1463c266bc"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+          </script>
+        
+          <script src="firebase.js"></script>
+
     </body>   
 </html>   
  
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-  import { getFirestore, setDoc,doc} from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyC1dJtNBsEY5oCb6Bm7bW4-OT3Ek4rdeQM",
-    authDomain: "vaccination-fe9eb.firebaseapp.com",
-    projectId: "vaccination-fe9eb",
-    storageBucket: "vaccination-fe9eb.appspot.com",
-    messagingSenderId: "470038900507",
-    appId: "1:470038900507:web:3cbaaf929572e3f5ddadbe"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  // Initialize Cloud Firestore and get a reference to the service
-  const db = getFirestore(app);
-
-  submit_data.addEventListener('click', (e) => {
-     
-      var Id = document.getElementById('Id').value;
-      var name = document.getElementById('name').value;
-      
-
-    setDoc(doc(db, "adults",Id), {
-      name: name,
-      Id: Id
-     
-     })
-   .then (function() {
-    alert('Adult added');
-   })
-   .catch(function(error){
-    alert.error(error);
-   })
-
-  });
-
-</script>
    
     
 
