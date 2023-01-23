@@ -26,53 +26,38 @@
         <label><b>User ID</b></label>
         <input type="text" placeholder="User ID" name="User id" id="uid" required>
 
-        <button type="button" id="submitData" name="Submit Data" class="registerbtn">Save</button>
+        <br><input type="radio" id="Mgender" name="gender" value="male"/> Male  
+        <input type="radio" id="Fgender" name="gender" value="female"/> Female <br>
+
+        <button type="button" onclick="ErrorMsg()" id="submitData" name="Submit Data" class="registerbtn">Save</button>
     </div>
 
 </form>
 
-
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyC98k--pr_8NqWy6l9sBRsnDlTH8l2-eR8",
+              authDomain: "gpsd-3b169.firebaseapp.com",
+              databaseURL: "https://gpsd-3b169-default-rtdb.firebaseio.com",
+              projectId: "gpsd-3b169",
+              storageBucket: "gpsd-3b169.appspot.com",
+              messagingSenderId: "690462553077",
+              appId: "1:690462553077:web:f7e0e007f9fc1463c266bc"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+          </script>
+        
+          <script src="firebaseAdmin.js"></script>
 
 </body>
 </html>
 
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-    import { getFirestore, setDoc,doc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
-
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyCgLMiSiILX-RoZHvv_VCHSCcAwFu58SZI",
-      authDomain: "adminpanel-a2932.firebaseapp.com",
-      projectId: "adminpanel-a2932",
-      storageBucket: "adminpanel-a2932.appspot.com",
-      messagingSenderId: "71194812719",
-      appId: "1:71194812719:web:0f55ed2e155b57e7cc01da"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-
-    // Initialize Cloud Firestore and get a reference to the service
-    const db = getFirestore(app);
-
-
-    submitData.addEventListener('click', (e) => {
-
-        var uname = document.getElementById('uname').value;
-        var uid = document.getElementById('uid').value;
-
-    // Add a new document in collection "cities"
-        setDoc(doc(db, "admin", uid), {
-        uname: uname,
-        uid : uid
-        });
-
-    alert('Admin Added')
-    })
-
-  </script>
