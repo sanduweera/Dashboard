@@ -306,16 +306,16 @@ tr td:last-child {
     align-items: center;
 }
 
-.status.purple {
-    background: rebeccapurple;
+.status.green {
+    background: rgb(3, 164, 40);
 }
 
-.status.pink {
-    background: deeppink;
+.status.yellow {
+    background: rgb(168, 165, 5);
 }
 
-.status.orange {
-    background: orangered;
+.status.red {
+    background: rgb(162, 4, 12);
 }
 
 .table-responsive {
