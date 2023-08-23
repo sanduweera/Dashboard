@@ -4,16 +4,53 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Add Admin</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="Addadmin.css">
 </head>
 
 <body>
+        <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="las la-syringe"></span> <span>Admin Portal</span></h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="Dashboard.html"><span class="las la-igloo"></span>
+                    <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="signup.html"><span class="las la-users"></span>
+                    <span>Add Users</span></a>
+                </li>
+                <li>
+                    <a href="AdminAcc.html"><span class="las la-user-circle"></span>
+                    <span>Admin Accounts</span></a>
+                </li>
+                <li>
+                    <a href="QR.html" class="active"><span class="las la-hospital"></span>
+                    <span>Details</span></a>
+                </li>
+                <!-- <li>
+                    <a href="Login.html"><span class="las la-door-open"></span>
+                    <span>Log Out</span></a>
+                </li> -->
+            </ul>
+        </div>
+        <div class="log-out">
+            <ul onclick="sign">
+                <li>
+                    <a href="Login.html"><span class="las la-door-open"></span>
+                    <span>Log Out</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 <form>
-    <nav>
-        <a href="Addadmin.html" class="logo"><img src="img/logo.png"></a>               
-    </nav>
-   
+    
+    
     <div class="container">
        
         <h1>Add Admin</h1>
