@@ -56,7 +56,7 @@
                   <span class="las la-bars"></span>
               </label>
 
-              Admin Panel
+              Add Admin
           </h2>
           
           <div class="user-wrapper"><div>
@@ -65,19 +65,28 @@
               </div>
           </div>
       </header>
-        <div class="header">          
-        
-         
-        <div class="row">
-            
-            <div class="col">
-                <h1>Admin Panel</h1>
-                <p>You have access to Admin and User Details</p>
-                <button  type="button" onclick=location.href='Addadmin.html'>ADD ADMIN</button >
-                <button  type="button" onclick=location.href='change.html' >CHANGE PASSWORD</button>
+    
+      <div class="center">
+        <h1> Add New Admin</h1>
+        <form method="post" id="adult_signup">
+            <div class="txt_field">
+                <input type="text" name="Adminname" id="name" required>
+                <label>Admin Name</label>
             </div>
-        </div>
-        </div>
+            <div class="txt_field">
+                    <input type="text" name="AdminId" id="NIC" required>
+                    <label>Admin Id </label>
+            </div>
+            <div class="txt_field">
+                    <input type="text" name="Password" id="pwd" required>
+                    <label>Password </label>
+            </div>
+            <br>
+
+            <button type="button" onclick="ErrorMsg()"  id="submit_data" class="btn" name="submit_data">Add</button>        
+            
+        </form>
+    </div>
        
 </div>
 
