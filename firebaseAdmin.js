@@ -11,40 +11,33 @@ firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
 
 function ErrorMsg(){
-    var uid = document.getElementById("uid").value;
-    var uname = document.getElementById("uname").value;
-    var gender = "";
-    if(document.getElementById("Fgender").checked == true){
-        gender = document.getElementById("Fgender").value;
-    }
-    else if(document.getElementById("Mgender").checked == true){
-        gender = document.getElementById("Mgender").value;
-    }
-    else{
-        alert("Select Radio button !");
-    }
-    
-    if (gender == "" || uname == "" || uid == "") {
+    var name = document.getElementById("name").value;
+  var pass = document.getElementById("pwd").value;
+  var nic = document.getElementById("NIC").value;
+  var email = document.getElementById("email").value;
+        
+    if (name == "" || pass == "" || nic == "" || email=="") {
         alert("Empty Fields");
      }
      else{
         console.log("connecting to firebase...");
-        console.log(uid);
-        console.log(uname);
-        console.log(gender);
-        storeData(gender);
+        storeData();
+
      }
 }
- 
-function storeData(gender) {
- 
-  var uid = document.getElementById("uid").value;
-  var uname = document.getElementById("uname").value;
 
-     db.collection("admins").doc(uid).set({
-         Name: uname,
-         id: uid,
-         gender: gender,
+  
+function storeData() {
+ 
+  var name = document.getElementById("name").value;
+  var pass = document.getElementById("pwd").value;
+  var nic = document.getElementById("NIC").value;
+  var email = document.getElementById("email").value;
+
+     db.collection("admins").doc(email).set({
+         name: name,
+         id: nic,
+         email: email,
      })
      
      .then(function() {
@@ -53,4 +46,21 @@ function storeData(gender) {
      .catch(function(error) {
         alert.error("Error writing doc", error);
      });
+
+
+    // firebase code
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, pass)
+      .then((result) => {
+        // Signed in
+        alert("You are Signed Up");
+        console.log(result);
+        // ...
+      })
+      .catch((error) => {
+        console.log(error.code);
+        console.log(error.message);
+        // ..
+      });
 }

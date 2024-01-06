@@ -141,7 +141,6 @@ p{
     backdrop-filter: blur(30px);
     width: 30%;
     height: 30%;
-    padding: 16px;
     border: 2px solid transparent;
     background-clip: padding-box;
     box-shadow: 5px 5px 5px rgba(45,55,68,0.1);

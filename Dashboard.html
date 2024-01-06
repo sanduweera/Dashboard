@@ -65,8 +65,8 @@
             </div>
             <div class="user-wrapper">
                 <div>
-                    <h4>Kusal Mendes</h4>
-                    <small>PHI Officer</small>
+                    <h4 id="name">Kusal Mendes</h4>
+                    <small id="small">PHI Officer</small>
                 </div>
             </div>
         </header>
@@ -76,7 +76,7 @@
             <div class="cards">
                 <div class="card-single">
                     <div>
-                        <h1>2</h1>
+                        <h1 id="usersCount">0</h1>
                         <span>Users</span>
                     </div>
                     <div>
@@ -86,7 +86,7 @@
 
                 <div class="card-single">
                     <div>
-                        <h1>5</h1>
+                        <h1 id="adminCount">0</h1>
                         <span>Admins</span>
                     </div>
                     <div>
@@ -133,120 +133,45 @@
                                             <td>Status</td>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>WMK Walisundara</td>
-                                            <td>200016903099</td>
-                                            <td>
-                                                <span class="status green"></span>
-                                                &nbsp;&nbsp;done
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>HPMSS Shavindi</td>
-                                            <td>200122551318</td>
-                                            <td>
-                                                <span class="status red"></span>
-                                                &nbsp;&nbsp;pending
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>HKA Geethanjana</td>
-                                            <td>200084001018</td>
-                                            <td>
-                                                <span class="status yellow"></span>
-                                                &nbsp;&nbsp;in progress
-                                            </td>
-                                        </tr>
-                                        
+                                    <tbody id="tableDashbord">
+                                       
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="customers">
+                <div class="projects">
                     <div class="card">
                         <div class="card-header">
-                            <h3>Admins</h3>
+                            <h3>Admin Details</h3>
                         </div>
 
                         <div class="card-body">
-                            <div class="customer">
-                                <div class="info">
-                                    <div>
-                                        <h4>MPW Kariyawasam</h4>
-                                        <small>MOH Doctor</small>
-                                    </div>
-                                </div>
-                                <div class="contact">
-                                    <span class="las la-user-circle"></span>
-                                    <span class="las la-comment"></span>
-                                    <span class="las la-phone"></span>
-                                </div>
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Admin Name</td>
+                                            <td>ID</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableAdmin">
+                                       
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="customer">
-                                <div class="info">
-                                    <div>
-                                        <h4>HKA Geethanjana</h4>
-                                        <small>PHNS</small>
-                                    </div>
-                                </div>
-                                <div class="contact">
-                                    <span class="las la-user-circle"></span>
-                                    <span class="las la-comment"></span>
-                                    <span class="las la-phone"></span>
-                                </div>
-                            </div>
-                            <div class="customer">
-                                <div class="info">
-                                    <div>
-                                        <h4>SM Rupasinghe</h4>
-                                        <small>SPHM</small>
-                                    </div>
-                                </div>
-                                <div class="contact">
-                                    <span class="las la-user-circle"></span>
-                                    <span class="las la-comment"></span>
-                                    <span class="las la-phone"></span>
-                                </div>
-                            </div>
-                            <div class="customer">
-                                <div class="info">
-                                    <div>
-                                        <h4>KNM Gamage</h4>
-                                        <small>PHM Officer</small>
-                                    </div>
-                                </div>
-                                <div class="contact">
-                                    <span class="las la-user-circle"></span>
-                                    <span class="las la-comment"></span>
-                                    <span class="las la-phone"></span>
-                                </div>
-                            </div>
-                            <div class="customer">
-                                <div class="info">
-                                    <div>
-                                        <h4>LP Gunarathne</h4>
-                                        <small>RD Office</small>
-                                    </div>
-                                </div>
-                                <div class="contact">
-                                    <span class="las la-user-circle"></span>
-                                    <span class="las la-comment"></span>
-                                    <span class="las la-phone"></span>
-                                </div>
-                            </div>
-                            
                         </div>
                     </div>
-                </div>
-            </div>
 
         </main>
 
     </div>
-    <script type="text/javascript" src="firebaseLogin.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+
+    <script type="text/javascript" src="dashbordUsers.js"></script>
+    <script type="text/javascript" src="dashbordAdmins.js"></script>
 </body>
 </html>
